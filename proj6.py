@@ -12,3 +12,6 @@ if "1" in user_id:
      with open(r"C:\Users\Caiseyann\Documents\passwords\password.txt", "w") as a:
          store_password = a.write(password)
 
+if user_id == store_email:
+
+    
