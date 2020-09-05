@@ -19,3 +19,5 @@ if user_id == store_email:
     password2 = input("Enter your password : ")
     with open(r"C:\Users\Caiseyann\Documents\passwords\pass.txt", "r") as ar:
         store_pass = ar.read()
+
+    if password2 == store_email: 
