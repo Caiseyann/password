@@ -1,9 +1,13 @@
+import pickle
+
 user_id = input("Enter your user ID (Press 1 to create account) :")
 
 dictionary = {}
 
-with open(r"C:\Users\Caiseyann\Documents\passwords\pass_man.txt", "bw"):
-    
+with open(r"C:\Users\Caiseyann\Documents\passwords\pass_man.txt", "bw") as filewrite:
+    dictionary = pickle.load(filewrite)
+
+
 
 
 if "1" in user_id:
