@@ -9,7 +9,7 @@ if "1" in user_id:
 
      password = input("Enter your user passwords :")
 
-     with open(r"C:\Users\Caiseyann\Documents\passwords\password.txt", "w") as a:
+     with open(r"C:\Users\Caiseyann\Documents\passwords\pass.txt", "w") as a:
          store_pass = a.write(password)
 
 if user_id == store_email:
