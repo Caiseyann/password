@@ -2,7 +2,8 @@ user_id = input("Enter your user ID (Press 1 to create account) :")
 
 dictionary = {}
 
-with open("")
+with open(r"C:\Users\Caiseyann\Documents\passwords\pass_man.txt", "bw"):
+    
 
 
 if "1" in user_id:
