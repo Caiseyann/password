@@ -14,4 +14,4 @@ if "1" in user_id:
 
 if user_id == store_email:
 
-    
+    password2 = input("Enter your password : ")
