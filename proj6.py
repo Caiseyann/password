@@ -21,4 +21,4 @@ if user_id == store_email:
         store_pass = ar.read()
 
     if password2 == store_pass:
-       conf = input("To know your password select '1', to save your password select '2'")
+       conf = input("To know your password select '1', to save your password select '2' :")
