@@ -12,6 +12,9 @@ if "1" in user_id:
      with open(r"C:\Users\Caiseyann\Documents\passwords\pass.txt", "w") as a:
          store_pass = a.write(password)
 
+with open(r"C:\Users\Caiseyann\Documents\passwords\email.txt", "r") as fr:
+         store_email = fr.read()
+
 if user_id == store_email:
 
     password2 = input("Enter your password : ")
