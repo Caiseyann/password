@@ -1,4 +1,5 @@
 import pickle
+import pyperclip
 
 user_id = input("Enter your user ID (Press 1 to create account) :")
 
@@ -37,9 +38,27 @@ if user_id == store_email:
            confirmation = input("Would you like to save this input (y/n) : ")
 
            if "y" in confirmation:
-               dictionary[account] = password
+               dictionary[account] = acc_pass
 
                with open(r"C:\Users\Caiseyann\Documents\passwords\pass_man.txt", "bw") as readfile:
-                   dictionary = pickle.dump.load()
+                   dictionary = pickle.dump(dictionary, readfile, protocal=2)
+               print("Done! Your {account)'s password has been saved")
+
+           else:
+               print("your data has not been saved")
+
+       if "2" in conf:
+           email1 = input("Which account's password would you want to know: ")
+
+           with open(r"C:\Users\Caiseyann\Documents\passwords\pass_man.txt", "br") as file:
+               dictionary = pickle.load(file)
+
+           if email in dictionary:
+               print(f"Your {email1}'s password is {dictionary[email1]}")
+               pyperclip.copy(dictionary[email1])
+       else:
+           print("This password is not saved")
+
+
 
 
