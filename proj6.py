@@ -4,11 +4,8 @@ user_id = input("Enter your user ID (Press 1 to create account) :")
 
 dictionary = {}
 
-with open(r"C:\Users\Caiseyann\Documents\passwords\pass_man.txt", "bw") as filewrite:
-    dictionary = pickle.load(filewrite)
-
-
-
+# with open(r"C:\Users\Caiseyann\Documents\passwords\pass_man.txt", "bw") as filewrite:
+#     dictionary = pickle.load(filewrite)
 
 if "1" in user_id:
 
@@ -32,3 +29,7 @@ if user_id == store_email:
 
     if password2 == store_pass:
        conf = input("To know your password select '1', to save your password select '2' :")
+
+       if "2" in conf:
+           account = input("Enter your account name : ")
+           acc_pass = input("Enter your account password : ")
